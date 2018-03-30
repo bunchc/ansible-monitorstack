@@ -5,6 +5,3 @@
 
 - include: config.yml
   when: monitorstack_config
-
-- name: Add monitorstack to telegraf
-  # TODO

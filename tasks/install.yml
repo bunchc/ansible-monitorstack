@@ -10,3 +10,4 @@
 - name: install | Installing monitorstack
   pip:
     name: file://{{ monitorstack_source_dir }}
+  become: true
