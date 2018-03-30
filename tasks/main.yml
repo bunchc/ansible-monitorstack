@@ -1,0 +1,10 @@
+---
+# tasks file for ansible-monitorstack
+
+- include: install.yml
+
+- include: config.yml
+  when: monitorstack_config
+
+- name: Add monitorstack to telegraf
+  # TODO
